@@ -140,6 +140,7 @@
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Practice Areas</a></li>
         <li><a href="#achievements"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="blog.html"><i class="bi bi-pen navicon"></i> Blog</a></li>
       </ul>
     </nav>
 
@@ -261,55 +262,128 @@
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row skills-content skills-animation">
 
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>Property Document Vetting &amp; Title Examination</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+        <style>
+          .skill-category { margin-bottom: 2rem; }
+          .skill-category-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: .75rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+          .skill-category-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #e0e0e0;
+          }
+          .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+          .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            line-height: 1;
+            transition: transform 0.15s, box-shadow 0.15s;
+            cursor: default;
+          }
+          .skill-tag:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+          .skill-tag.blue   { background: #dbeafe; color: #1e3a8a; }
+          .skill-tag.green  { background: #dcfce7; color: #14532d; }
+          .skill-tag.purple { background: #ede9fe; color: #4c1d95; }
+          .skill-tag.amber  { background: #fef3c7; color: #78350f; }
+          .skill-tag.slate  { background: #f1f5f9; color: #334155; border: 1px solid #e2e8f0; }
+          .skill-tag.rose   { background: #ffe4e6; color: #881337; }
+        </style>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="skill-category">
+              <div class="skill-category-title">⚖️ Property &amp; Transactional Law</div>
+              <div class="skill-tags">
+                <span class="skill-tag blue">Property Document Vetting</span>
+                <span class="skill-tag blue">Title Examination</span>
+                <span class="skill-tag blue">Mortgage Deeds</span>
+                <span class="skill-tag blue">Power of Attorney</span>
+                <span class="skill-tag blue">Redemption &amp; Revocation Deeds</span>
+                <span class="skill-tag blue">Security Document Review</span>
+                <span class="skill-tag blue">Encumbrance Analysis</span>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>Legal Drafting (Deeds, PoA, Notices, Securities)</span> <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skill-category">
+              <div class="skill-category-title">📝 Legal Drafting</div>
+              <div class="skill-tags">
+                <span class="skill-tag green">Legal Notices</span>
+                <span class="skill-tag green">Banking Security Instruments</span>
+                <span class="skill-tag green">Legal Opinion Preparation</span>
+                <span class="skill-tag green">Contract Drafting</span>
+                <span class="skill-tag green">Deed Preparation</span>
+                <span class="skill-tag green">PoA &amp; Declarations</span>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>Legal Research &amp; Academic Writing</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skill-category">
+              <div class="skill-category-title">🏦 Banking &amp; Finance</div>
+              <div class="skill-tags">
+                <span class="skill-tag amber">Banking Documentation</span>
+                <span class="skill-tag amber">Real Estate Legal Opinions</span>
+                <span class="skill-tag amber">Risk Identification</span>
+                <span class="skill-tag amber">Compliance Review</span>
               </div>
             </div>
+
           </div>
 
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>Oral Advocacy &amp; Moot Court Argumentation</span> <i class="val">93%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="skill-category">
+              <div class="skill-category-title">🎤 Advocacy &amp; Dispute</div>
+              <div class="skill-tags">
+                <span class="skill-tag purple">Oral Advocacy</span>
+                <span class="skill-tag purple">Moot Court Argumentation</span>
+                <span class="skill-tag purple">Memorial Writing</span>
+                <span class="skill-tag purple">Structured Debate</span>
+                <span class="skill-tag purple">Cross-Examination</span>
+                <span class="skill-tag purple">Legal Reasoning</span>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>Legal Opinion Preparation (Banking &amp; Real Estate)</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skill-category">
+              <div class="skill-category-title">📚 Research &amp; Academic Writing</div>
+              <div class="skill-tags">
+                <span class="skill-tag rose">Legal Research</span>
+                <span class="skill-tag rose">Academic Writing</span>
+                <span class="skill-tag rose">Peer-Reviewed Publication</span>
+                <span class="skill-tag rose">Human Rights Law</span>
+                <span class="skill-tag rose">Environmental Law</span>
+                <span class="skill-tag rose">Constitutional Analysis</span>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>AI-Assisted Research &amp; Digital Document Management</span> <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="skill-category">
+              <div class="skill-category-title">💻 Digital &amp; Research Tools</div>
+              <div class="skill-tags">
+                <span class="skill-tag slate">AI-Assisted Research</span>
+                <span class="skill-tag slate">Digital Document Management</span>
+                <span class="skill-tag slate">Legal Databases</span>
+                <span class="skill-tag slate">Microsoft Office Suite</span>
+                <span class="skill-tag slate">ResearchGate / Zotero</span>
               </div>
             </div>
+
           </div>
-
         </div>
+
       </div>
 
     </section><!-- /Skills Section -->
