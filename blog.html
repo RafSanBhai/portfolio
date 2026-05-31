@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog & Legal Insights — Rafsanur Rahman Rakib | Lawyer & Legal Researcher</title>
+  <meta name="description" content="Legal insights, commentaries, and reflections by Rafsanur Rahman Rakib — covering property law, constitutional issues, human rights, and legal practice in Bangladesh." />
+  <meta name="author" content="Rafsanur Rahman Rakib" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://www.rafsanurrahmanrakib.com/blog.html" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* ── Blog-specific overrides ── */
+    body { font-family: 'Roboto', sans-serif; }
+
+    /* Hero banner */
+    .blog-hero {
+      background: linear-gradient(135deg, #0d0d23 0%, #1a1a3e 60%, #0f2744 100%);
+      padding: 80px 0 60px;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .blog-hero h1 { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 2.4rem; }
+    .blog-hero p { font-size: 1.05rem; opacity: .8; max-width: 560px; }
+    .blog-hero .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #a5c8f0;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+
+    /* Filter pills */
+    .filter-bar { padding: 24px 0 8px; }
+    .filter-pill {
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: .82rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid #dee2e6;
+      color: #555;
+      background: #fff;
+      transition: all .2s;
+      user-select: none;
+    }
+    .filter-pill:hover, .filter-pill.active {
+      background: #0d0d23; color: #fff; border-color: #0d0d23;
+    }
+
+    /* Blog card */
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      transition: transform .25s ease, box-shadow .25s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 32px rgba(0,0,0,0.13);
+    }
+    .blog-card-image {
+      width: 100%; height: 180px;
+      object-fit: cover;
+      background: #f0f4ff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+      color: #c7d4f0;
+    }
+    .blog-card-body {
+      padding: 1.4rem 1.5rem 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-card-meta {
+      display: flex; align-items: center; gap: 12px;
+      font-size: .75rem; color: #888; margin-bottom: .7rem;
+    }
+    .blog-card-meta i { font-size: .7rem; }
+    .blog-cat-badge {
+      display: inline-block;
+      font-size: .68rem; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; padding: 2px 9px;
+      border-radius: 20px; margin-bottom: .55rem;
+    }
+    .cat-property    { background: #dbeafe; color: #1e40af; }
+    .cat-human-rights{ background: #dcfce7; color: #166534; }
+    .cat-constitutional { background: #f3e8ff; color: #6b21a8; }
+    .cat-practice    { background: #fef3c7; color: #92400e; }
+    .cat-environmental { background: #ccfbf1; color: #134e4a; }
+    .cat-commentary  { background: #ffe4e6; color: #9f1239; }
+
+    .blog-card h5 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      line-height: 1.4; margin-bottom: .5rem;
+      color: #1a1a2e;
+    }
+    .blog-card p {
+      font-size: .85rem; color: #666;
+      line-height: 1.6; flex: 1;
+    }
+    .blog-card-footer {
+      padding: 0 1.5rem 1.2rem;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .read-more-link {
+      font-size: .82rem; font-weight: 600;
+      color: #1e40af; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 4px;
+    }
+    .read-more-link:hover { color: #0d0d23; }
+    .read-time {
+      font-size: .75rem; color: #aaa;
+      display: flex; align-items: center; gap: 4px;
+    }
+
+    /* Featured card (wide) */
+    .blog-card-featured .blog-card-image {
+      height: 260px;
+    }
+    .blog-card-featured .blog-card-body h5 {
+      font-size: 1.2rem;
+    }
+
+    /* Sidebar */
+    .sidebar-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1.4rem 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-card h6 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700; font-size: .88rem;
+      text-transform: uppercase; letter-spacing: .08em;
+      color: #0d0d23; margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid #e8f0fe;
+    }
+    .sidebar-tag {
+      display: inline-block;
+      padding: 4px 12px; margin: 3px;
+      border-radius: 50px; font-size: .78rem;
+      background: #f0f4ff; color: #1e40af;
+      font-weight: 500; transition: all .2s;
+      cursor: pointer;
+    }
+    .sidebar-tag:hover { background: #1e40af; color: #fff; }
+    .recent-post-item {
+      display: flex; gap: 12px;
+      align-items: flex-start;
+      padding: .7rem 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .recent-post-item:last-child { border-bottom: none; }
+    .recent-post-item .rp-icon {
+      width: 40px; height: 40px; border-radius: 8px;
+      background: #e8f0fe; display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0; font-size: 1.1rem; color: #1e40af;
+    }
+    .recent-post-item .rp-title {
+      font-size: .82rem; font-weight: 600; color: #1a1a2e; line-height: 1.35;
+    }
+    .recent-post-item .rp-date {
+      font-size: .72rem; color: #999; margin-top: 2px;
+    }
+
+    /* Coming soon overlay for future posts */
+    .blog-card-coming {
+      position: relative;
+    }
+    .coming-soon-ribbon {
+      position: absolute;
+      top: 14px; right: -8px;
+      background: #0d0d23; color: #fff;
+      font-size: .65rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      padding: 3px 12px 3px 10px;
+      border-radius: 3px 0 0 3px;
+      box-shadow: -2px 2px 6px rgba(0,0,0,0.2);
+    }
+    .coming-soon-ribbon::after {
+      content: '';
+      position: absolute; right: -8px; top: 0;
+      border-width: 12px 8px 12px 0;
+      border-style: solid;
+      border-color: transparent transparent transparent #0d0d23;
+      /* right triangle */
+    }
+
+    /* Newsletter banner */
+    .newsletter-banner {
+      background: linear-gradient(135deg, #0d0d23, #1a2744);
+      color: #fff;
+      border-radius: 14px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .newsletter-banner h4 { font-family:'Raleway',sans-serif; font-weight:700; }
+    .newsletter-banner p { opacity:.75; font-size:.9rem; }
+    .newsletter-banner .btn-light { font-weight:600; border-radius:50px; padding:10px 28px; }
+
+    /* Pagination */
+    .blog-pagination .page-link {
+      color: #1e40af; border-radius: 6px !important;
+      margin: 0 2px; font-weight: 500;
+    }
+    .blog-pagination .page-item.active .page-link {
+      background: #0d0d23; border-color: #0d0d23;
+    }
+
+    /* Back to portfolio link */
+    .back-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: rgba(255,255,255,0.7); font-size: .85rem;
+      text-decoration: none; transition: color .2s;
+    }
+    .back-link:hover { color: #fff; }
+
+    @media (max-width: 768px) {
+      .blog-hero h1 { font-size: 1.7rem; }
+      .blog-card-featured .blog-card-image { height: 200px; }
+    }
+  </style>
+
+</head>
+
+<body style="background:#f8fafd;">
+
+  <!-- ── Header / Sidebar Nav ── -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.png" alt="Rafsanur Rahman Rakib" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Rafsan</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://x.com/Rafsan1819" class="twitter" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://www.facebook.com/RafSan.R.Rakib" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.youtube.com/@Law_Focus" class="youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+      <a href="https://wa.link/s0a8sm" class="whatsapp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/in/rafsan01/" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#publications"><i class="bi bi-journals navicon"></i> Publications</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Practice Areas</a></li>
+        <li><a href="index.html#achievements"><i class="bi bi-trophy navicon"></i> Achievements</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        <li><a href="blog.html" class="active"><i class="bi bi-pencil-square navicon"></i> Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <!-- ── Blog Hero ── -->
+    <section class="blog-hero">
+      <div class="container">
+        <a href="index.html" class="back-link mb-3 d-inline-flex">
+          <i class="bi bi-arrow-left"></i> Back to Portfolio
+        </a>
+        <div class="pt-2">
+          <span class="hero-badge">Legal Insights &amp; Commentary</span>
+          <h1>Thoughts on Law &amp; Practice</h1>
+          <p>Essays, case commentaries, and reflections on property law, constitutional discourse, human rights, and the evolving legal landscape of Bangladesh.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Filter Bar ── -->
+    <div class="filter-bar" style="background:#fff; border-bottom:1px solid #eee;">
+      <div class="container">
+        <div class="d-flex flex-wrap gap-2 py-2">
+          <span class="filter-pill active" data-filter="all">All Posts</span>
+          <span class="filter-pill" data-filter="property">Property Law</span>
+          <span class="filter-pill" data-filter="constitutional">Constitutional</span>
+          <span class="filter-pill" data-filter="human-rights">Human Rights</span>
+          <span class="filter-pill" data-filter="environmental">Environmental</span>
+          <span class="filter-pill" data-filter="practice">Legal Practice</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Main Content ── -->
+    <section style="padding: 48px 0 60px;">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- ── Blog Posts Column ── -->
+          <div class="col-lg-8">
+
+            <!-- Featured Post -->
+            <div class="mb-4" data-aos="fade-up" data-category="constitutional">
+              <div class="blog-card blog-card-featured">
+                <div class="blog-card-image" style="background:linear-gradient(135deg,#e8f0fe,#c7d4f0);">
+                  <i class="bi bi-building-fill-gear" style="font-size:4rem; color:#1e40af; opacity:.4;"></i>
+                </div>
+                <div class="blog-card-body">
+                  <span class="blog-cat-badge cat-constitutional">Constitutional Law</span>
+                  <div class="blog-card-meta">
+                    <span><i class="bi bi-calendar3"></i> December 2024</span>
+                    <span><i class="bi bi-dot"></i></span>
+                    <span>Published at LexFex</span>
+                  </div>
+                  <h5>Constitutional Debate: Amendment or Rewrite?</h5>
+                  <p>Bangladesh's constitutional discourse has reached a pivotal crossroads. This commentary examines the legal and political arguments surrounding wholesale constitutional revision versus targeted amendments — exploring what each path means for democratic legitimacy, fundamental rights, and the rule of law in a post-2024 political landscape.</p>
+                </div>
+                <div class="blog-card-footer">
+                  <a href="https://lexfex.com/" target="_blank" rel="noopener" class="read-more-link">
+                    Read on LexFex <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <span class="read-time"><i class="bi bi-clock"></i> 8 min read</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row of 2 cards -->
+            <div class="row g-4 mb-4">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="50" data-category="human-rights">
+                <div class="blog-card">
+                  <div class="blog-card-image" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0);">
+                    <i class="bi bi-globe2" style="font-size:3rem; color:#166534; opacity:.4;"></i>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-cat-badge cat-human-rights">Human Rights</span>
+                    <div class="blog-card-meta">
+                      <span><i class="bi bi-calendar3"></i> November 2025</span>
+                    </div>
+                    <h5>International Institutions &amp; Human Rights in a Multipolar World</h5>
+                    <p>A reflection on the key findings of my peer-reviewed research published in the Journal of Tianjin University — examining whether multilateral bodies can still anchor human rights in an era of competing great-power interests.</p>
+                  </div>
+                  <div class="blog-card-footer">
+                    <a href="https://doi.org/10.5281/zenodo.17548372" target="_blank" rel="noopener" class="read-more-link">
+                      Read Paper <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <span class="read-time"><i class="bi bi-clock"></i> 6 min read</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="practice">
+                <div class="blog-card" style="position:relative;">
+                  <div class="coming-soon-ribbon">Coming Soon</div>
+                  <div class="blog-card-image" style="background:linear-gradient(135deg,#fef3c7,#fde68a); opacity:.7;">
+                    <i class="bi bi-house-door" style="font-size:3rem; color:#92400e; opacity:.4;"></i>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-cat-badge cat-property">Property Law</span>
+                    <div class="blog-card-meta">
+                      <span><i class="bi bi-calendar3"></i> Upcoming</span>
+                    </div>
+                    <h5>Demystifying Title Examination: A Practitioner's Guide for Bangladesh</h5>
+                    <p>A practical walkthrough of the property title examination process in Bangladesh — chain of title, mutation records, encumbrance checks, and common pitfalls in urban real estate transactions.</p>
+                  </div>
+                  <div class="blog-card-footer">
+                    <span class="read-more-link" style="opacity:.4; cursor:default;">
+                      Coming Soon <i class="bi bi-hourglass-split"></i>
+                    </span>
+                    <span class="read-time"><i class="bi bi-clock"></i> ~10 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row of 2 more cards -->
+            <div class="row g-4 mb-4">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="50" data-category="environmental">
+                <div class="blog-card" style="position:relative;">
+                  <div class="coming-soon-ribbon">Coming Soon</div>
+                  <div class="blog-card-image" style="background:linear-gradient(135deg,#ccfbf1,#99f6e4); opacity:.7;">
+                    <i class="bi bi-tree" style="font-size:3rem; color:#134e4a; opacity:.4;"></i>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-cat-badge cat-environmental">Environmental Law</span>
+                    <div class="blog-card-meta">
+                      <span><i class="bi bi-calendar3"></i> Upcoming</span>
+                    </div>
+                    <h5>The Right to a Safe Environment: From Soft Law to Enforceable Rights</h5>
+                    <p>Drawing from my submitted research paper, this article examines the doctrinal evolution of environmental rights — from Stockholm 1972 to the UN General Assembly's 2022 resolution — and what it means for domestic legal systems like Bangladesh.</p>
+                  </div>
+                  <div class="blog-card-footer">
+                    <span class="read-more-link" style="opacity:.4; cursor:default;">
+                      Coming Soon <i class="bi bi-hourglass-split"></i>
+                    </span>
+                    <span class="read-time"><i class="bi bi-clock"></i> ~9 min</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100" data-category="practice">
+                <div class="blog-card" style="position:relative;">
+                  <div class="coming-soon-ribbon">Coming Soon</div>
+                  <div class="blog-card-image" style="background:linear-gradient(135deg,#ffe4e6,#fecdd3); opacity:.7;">
+                    <i class="bi bi-bank" style="font-size:3rem; color:#9f1239; opacity:.4;"></i>
+                  </div>
+                  <div class="blog-card-body">
+                    <span class="blog-cat-badge cat-practice">Legal Practice</span>
+                    <div class="blog-card-meta">
+                      <span><i class="bi bi-calendar3"></i> Upcoming</span>
+                    </div>
+                    <h5>Banking Security Documents in Bangladesh: Mortgage, Hypothecation &amp; Pledge Explained</h5>
+                    <p>A junior practitioner's breakdown of the three major security instruments used by Bangladeshi banks — distinguishing legal mortgages from equitable mortgages, and explaining how hypothecation agreements protect lenders in financing transactions.</p>
+                  </div>
+                  <div class="blog-card-footer">
+                    <span class="read-more-link" style="opacity:.4; cursor:default;">
+                      Coming Soon <i class="bi bi-hourglass-split"></i>
+                    </span>
+                    <span class="read-time"><i class="bi bi-clock"></i> ~7 min</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Legitimate Expectation card -->
+            <div class="mb-4" data-aos="fade-up" data-category="constitutional">
+              <div class="blog-card">
+                <div class="blog-card-image" style="background:linear-gradient(135deg,#f3e8ff,#e9d5ff);">
+                  <i class="bi bi-scales" style="font-size:3rem; color:#6b21a8; opacity:.35;"></i>
+                </div>
+                <div class="blog-card-body">
+                  <span class="blog-cat-badge cat-constitutional">Administrative Law</span>
+                  <div class="blog-card-meta">
+                    <span><i class="bi bi-calendar3"></i> 2023</span>
+                    <span><i class="bi bi-dot"></i></span>
+                    <span>ResearchGate</span>
+                  </div>
+                  <h5>Legitimate Expectation: An Overview</h5>
+                  <p>An accessible introduction to the doctrine of legitimate expectation in administrative and public law — exploring its origins in English common law, its reception in South Asian jurisdictions, and its significance for citizens seeking judicial review of government decisions.</p>
+                </div>
+                <div class="blog-card-footer">
+                  <a href="https://www.researchgate.net/profile/Rafsanur-Rahman-Rakib" target="_blank" rel="noopener" class="read-more-link">
+                    View on ResearchGate <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <span class="read-time"><i class="bi bi-clock"></i> 5 min read</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Newsletter Banner -->
+            <div class="newsletter-banner" data-aos="fade-up">
+              <h4 class="mb-2">Stay Updated</h4>
+              <p class="mb-3">New articles on property law, constitutional issues, and legal practice in Bangladesh are on the way. Reach out to be notified when new posts go live.</p>
+              <a href="index.html#contact" class="btn btn-light">
+                <i class="bi bi-envelope me-2"></i>Get in Touch
+              </a>
+            </div>
+
+          </div><!-- /col-lg-8 -->
+
+          <!-- ── Sidebar ── -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="150">
+
+            <!-- About the Author -->
+            <div class="sidebar-card text-center">
+              <img src="assets/img/my-profile-img.png" alt="Rafsanur Rahman Rakib" class="rounded-circle mb-3" style="width:80px;height:80px;object-fit:cover;border:3px solid #e8f0fe;">
+              <h6 style="margin-bottom:.5rem;">Rafsanur Rahman Rakib</h6>
+              <p style="font-size:.82rem;color:#666;line-height:1.5;">Junior Associate Lawyer · LL.M. Candidate · Published Academic Author. Based in Chattogram, Bangladesh.</p>
+              <a href="index.html#about" class="btn btn-sm btn-outline-primary rounded-pill px-3 mt-1" style="font-size:.8rem;">View Profile</a>
+            </div>
+
+            <!-- Recent Posts -->
+            <div class="sidebar-card">
+              <h6>Recent Posts</h6>
+              <div class="recent-post-item">
+                <div class="rp-icon"><i class="bi bi-building-fill-gear"></i></div>
+                <div>
+                  <div class="rp-title">Constitutional Debate: Amendment or Rewrite?</div>
+                  <div class="rp-date">December 2024 · LexFex</div>
+                </div>
+              </div>
+              <div class="recent-post-item">
+                <div class="rp-icon" style="background:#dcfce7;color:#166534;"><i class="bi bi-globe2"></i></div>
+                <div>
+                  <div class="rp-title">International Institutions &amp; Human Rights</div>
+                  <div class="rp-date">November 2025 · Journal of Tianjin Univ.</div>
+                </div>
+              </div>
+              <div class="recent-post-item">
+                <div class="rp-icon" style="background:#f3e8ff;color:#6b21a8;"><i class="bi bi-scales"></i></div>
+                <div>
+                  <div class="rp-title">Legitimate Expectation: An Overview</div>
+                  <div class="rp-date">2023 · ResearchGate</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Topics -->
+            <div class="sidebar-card">
+              <h6>Topics</h6>
+              <div>
+                <span class="sidebar-tag">Property Law</span>
+                <span class="sidebar-tag">Constitutional Law</span>
+                <span class="sidebar-tag">Human Rights</span>
+                <span class="sidebar-tag">Environmental Law</span>
+                <span class="sidebar-tag">Banking Law</span>
+                <span class="sidebar-tag">Administrative Law</span>
+                <span class="sidebar-tag">Moot Court</span>
+                <span class="sidebar-tag">Legal Drafting</span>
+                <span class="sidebar-tag">Title Examination</span>
+                <span class="sidebar-tag">Legal Practice</span>
+              </div>
+            </div>
+
+            <!-- External Profiles -->
+            <div class="sidebar-card">
+              <h6>Find Me On</h6>
+              <div class="d-flex flex-column gap-2">
+                <a href="https://www.researchgate.net/profile/Rafsanur-Rahman-Rakib" target="_blank" rel="noopener"
+                   style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:#f8faff;border-radius:8px;text-decoration:none;color:#333;font-size:.83rem;font-weight:500;">
+                  <i class="fab fa-researchgate" style="color:#00d4aa;font-size:1.1rem;width:20px;text-align:center;"></i>
+                  ResearchGate
+                </a>
+                <a href="https://doi.org/10.5281/zenodo.17548372" target="_blank" rel="noopener"
+                   style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:#f8faff;border-radius:8px;text-decoration:none;color:#333;font-size:.83rem;font-weight:500;">
+                  <i class="bi bi-journal-text" style="color:#1e40af;font-size:1.1rem;width:20px;text-align:center;"></i>
+                  Zenodo DOI
+                </a>
+                <a href="https://lexfex.com/" target="_blank" rel="noopener"
+                   style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:#f8faff;border-radius:8px;text-decoration:none;color:#333;font-size:.83rem;font-weight:500;">
+                  <i class="bi bi-pen" style="color:#6b21a8;font-size:1.1rem;width:20px;text-align:center;"></i>
+                  LexFex
+                </a>
+                <a href="https://www.linkedin.com/in/rafsan01/" target="_blank" rel="noopener"
+                   style="display:flex;align-items:center;gap:10px;padding:8px 10px;background:#f8faff;border-radius:8px;text-decoration:none;color:#333;font-size:.83rem;font-weight:500;">
+                  <i class="bi bi-linkedin" style="color:#0a66c2;font-size:1.1rem;width:20px;text-align:center;"></i>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+          </div><!-- /sidebar -->
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Rafsanur Rahman Rakib</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Filter pills
+    const pills = document.querySelectorAll('.filter-pill');
+    const posts = document.querySelectorAll('[data-category]');
+
+    pills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        pills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const filter = pill.dataset.filter;
+        posts.forEach(post => {
+          if (filter === 'all' || post.dataset.category === filter) {
+            post.style.display = '';
+            post.style.opacity = '1';
+          } else {
+            post.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
